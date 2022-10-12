@@ -1,0 +1,2 @@
+gcc -o saida t1.c t2.c
+#Gera o executavel com os arquivos empilhados

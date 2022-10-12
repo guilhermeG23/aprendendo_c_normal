@@ -1,0 +1,69 @@
+###Alguns são validos somente no VIM e outros em ambos os editores(VI/VIM)
+Ctrl+a -> No VIM e em cima de um numero, ele faz o incremento do valor de unica posicao;
+Ctrl+x -> Decrementa o descrito acima;
+:set nu -> Seta o numero de linhas
+:syntax -> Ativa ou desativa a interpretação da linguagem 
+!gcc -> Executa o ultimo comando GCC executado
+make <file> -> Gera uma linha de comando para gerar o arquivo executavel
+view -> Abrir um arquivo somente em vizualização
+dw -> Usar isso no vi, vai apagar a palavra que ele estiver selecionado com o cursor
+Estudar o padrão IEEE754e^C -> Padrão de floats
+objdump -dM intel <arquivo> -> Mostra o code de execução de máquina de um script executavel
+!obj -> Abre o ultimo arquivo binario aberto
+
+gdb -> Debugger em C
+(gdb) disas main
+Dump of assembler code for function main:
+   0x0000000000201b60 <+0>:	push   %rbp
+   0x0000000000201b61 <+1>:	mov    %rsp,%rbp
+   0x0000000000201b64 <+4>:	mov    $0x200768,%edi
+   0x0000000000201b69 <+9>:	mov    $0xa,%esi
+   0x0000000000201b6e <+14>:	xor    %eax,%eax
+   0x0000000000201b70 <+16>:	call   0x201e20 <printf@plt>
+   0x0000000000201b75 <+21>:	mov    $0x20061d,%edi
+   0x0000000000201b7a <+26>:	mov    $0xa,%esi
+   0x0000000000201b7f <+31>:	xor    %eax,%eax
+   0x0000000000201b81 <+33>:	call   0x201e20 <printf@plt>
+   0x0000000000201b86 <+38>:	mov    $0x2005c0,%edi
+   0x0000000000201b8b <+43>:	xor    %eax,%eax
+   0x0000000000201b8d <+45>:	call   0x201e20 <printf@plt>
+   0x0000000000201b92 <+50>:	mov    $0x20062e,%edi
+   0x0000000000201b97 <+55>:	mov    %eax,%esi
+   0x0000000000201b99 <+57>:	xor    %eax,%eax
+   0x0000000000201b9b <+59>:	call   0x201e20 <printf@plt>
+   0x0000000000201ba0 <+64>:	mov    $0x20064a,%edi
+   0x0000000000201ba5 <+69>:	mov    $0xa,%esi
+   0x0000000000201baa <+74>:	mov    $0xa,%edx
+   0x0000000000201baf <+79>:	mov    $0x41,%ecx
+   0x0000000000201bb4 <+84>:	xor    %eax,%eax
+   0x0000000000201bb6 <+86>:	call   0x201e20 <printf@plt>
+   0x0000000000201bbb <+91>:	mov    $0x20064a,%edi
+   0x0000000000201bc0 <+96>:	mov    $0xa,%esi
+   0x0000000000201bc5 <+101>:	mov    $0xa,%edx
+   0x0000000000201bca <+106>:	mov    $0x41,%ecx
+   0x0000000000201bcf <+111>:	xor    %eax,%eax
+   0x0000000000201bd1 <+113>:	call   0x201e20 <printf@plt>
+   0x0000000000201bd6 <+118>:	mov    $0x2007e7,%edi
+   0x0000000000201bdb <+123>:	mov    $0x63,%esi
+   0x0000000000201be0 <+128>:	xor    %eax,%eax
+   0x0000000000201be2 <+130>:	call   0x201e20 <printf@plt>
+   0x0000000000201be7 <+135>:	mov    $0x2006fa,%edi
+   0x0000000000201bec <+140>:	call   0x201e30 <puts@plt>
+   0x0000000000201bf1 <+145>:	mov    $0x2006d0,%edi
+   0x0000000000201bf6 <+150>:	xor    %eax,%eax
+   0x0000000000201bf8 <+152>:	call   0x201e20 <printf@plt>
+   0x0000000000201bfd <+157>:	mov    $0xa,%edi
+   0x0000000000201c02 <+162>:	call   0x201e40 <putchar@plt>
+   0x0000000000201c07 <+167>:	mov    $0x2006d0,%edi
+   0x0000000000201c0c <+172>:	xor    %eax,%eax
+   0x0000000000201c0e <+174>:	call   0x201e20 <printf@plt>
+   0x0000000000201c13 <+179>:	mov    $0x2007c0,%edi
+   0x0000000000201c18 <+184>:	call   0x201e30 <puts@plt>
+   0x0000000000201c1d <+189>:	mov    $0x2005e7,%edi
+   0x0000000000201c22 <+194>:	mov    $0x1,%esi
+   0x0000000000201c27 <+199>:	xor    %eax,%eax
+   0x0000000000201c29 <+201>:	call   0x201e20 <printf@plt>
+   0x0000000000201c2e <+206>:	mov    $0x200721,%edi
+   0x0000000000201c33 <+211>:	mov    $0x1,%esi
+   0x0000000000201c38 <+216>:	mov    $0x8,%edx
+   0x0000000000201c3d <+221>:	xor    %eax,%eax
